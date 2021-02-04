@@ -1,0 +1,21 @@
+name: "Climate alignment of the ECBs collateral"
+author: "test" 
+navbar:
+  title: "My Website"
+  type: inverse
+  right:
+    - text: "Policy Options"
+      href: https://www.stackoverflow.com                  
+    - text: "More Information"
+      href: https://www.stackoverflow.com  
+    - text: "Contact Us"
+      href: https://www.stackoverflow.com  
+output: 
+    html_document:
+      toc: false
+      theme: 
+        version: 4
+#        bootswatch: flatly
+#      css: bootstrap.css
+        
+
