@@ -1,13 +1,15 @@
 name: "Climate alignment of the ECBs collateral"
 author: "test" 
 navbar:
-  title: "My Website"
+  title: "Collateral Monitor"
   type: inverse
   right:
+    - text: "Previous Collaterals"
+      href: https://www.stackoverflow.com  
     - text: "Policy Options"
       href: https://www.stackoverflow.com                  
-    - text: "More Information"
-      href: https://www.stackoverflow.com  
+#    - text: "More Information"
+#      href: https://www.stackoverflow.com  
     - text: "Contact Us"
       href: https://www.stackoverflow.com  
 output: 

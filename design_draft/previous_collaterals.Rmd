@@ -1,0 +1,33 @@
+---
+title: ' '
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo=FALSE}
+library(htmltools)
+
+get_folder <- function(date){
+  return(gsub(" |\\.", "_", date))
+}
+```
+
+<!-- Title -->
+<h4 class="display-4"> Previous Collaterals </h4>
+
+<div class="container">
+```{r echo=FALSE}
+previous_collaterals <- c("03.02.21", "04.02.21") #read.csv("previous_collaterals.csv", header=TRUE)
+
+ul <- tags$ul()
+ul$children <- lapply(seq_len(length(previous_collaterals)), function(index) {
+    tags$li(
+      a(href=paste0(get_folder(previous_collaterals[index]), "/index.html"), previous_collaterals[index])
+    )
+})
+
+ul
+```
+</div>
