@@ -87,7 +87,8 @@ market_bonds<-readRDS(paste0(ald_folder, "/0_MarketPortfolios_bonds_portfolio.rd
 
 # overview of companies in PACTA sectors
 
-overview_companies <- bonds %>%
+overview_companies <- bonds2 %>%
+  filter(portfolio_name=="L1D") %>%
   filter(!(scenario %in% c("GECO2019_1.5c", "GECO2019_2c_m", "GECO2019_ref"))) %>%
   filter(year==startyear, scenario_geography=="Global") %>%
   select(company_name, financial_sector, plan_sec_prod) %>%
@@ -101,11 +102,11 @@ overview_companies <- bonds %>%
   mutate(production_share = plan_sec_prod*number/total_production) %>%
   select(financial_sector, company_name, production_share)
   
-png(filename="plots/tree_new.png",width=800, height=800)
+png(filename="plots/tree_l1d.png",width=800, height=800)
 treemap_plot <- treemap(overview_companies, index=c("financial_sector","company_name"),     vSize="production_share", 
                         type="index",
-                        palette=c(primary_blue, secondary_red , primary_grey, oil, hybrid_orange, secondary_moss_green),
-                        title="Overview of companies in PACTA sectors in the collateral framework",
+                        palette=c(primary_blue_faded, primary_grey, oil_faded, power_faded, secondary_moss_green_faded),
+                        title="Overview of companies in PACTA sectors in the collateral framework L1D",
                         
                         fontsize.labels=c(20,10),                # size of labels. Give the size per level of aggregation: size for group, size for subgroup, sub-subgroups...
                         fontsize.title=24,
@@ -115,14 +116,15 @@ treemap_plot <- treemap(overview_companies, index=c("financial_sector","company_
                         align.labels=list(
                           c("left", "top"), 
                           c("left", "bottom")
-                        ),                                   # Where to place labels in the rectangle?
+                        ), # Where to place labels in the rectangle?
+                        #aspRatio=2,
                         overlap.labels=0.3,                      # number between 0 and 1 that determines the tolerance of the overlap between labels. 0 means that labels of lower levels are not printed if higher level labels overlap, 1  means that labels are always printed. In-between values, for instance the default value .5, means that lower level labels are printed if other labels do not overlap with more than .5  times their area size.
                         inflate.labels=F,                        # If true, labels are bigger when rectangle is bigger.
                         
 )
 dev.off()
 
-
+help(treemap)
 # overview of type of financial instrument
 
 security_type <- as.data.frame(table(total$security_type))
@@ -223,6 +225,17 @@ haircut_techmix <- bonds2 %>%
   mutate(plan_tech_share=plan_tech_share/sum(plan_tech_share, na.rm=T)) %>%
   ungroup()
 
+p<-ggplot(data=haircut_techmix, aes(fill=technology, x=portfolio_name, y=plan_tech_share, width=.45)) +
+  geom_bar(stat="identity") +
+  ggtitle(paste("Aggregate technology mix of", "power companies \n in the collateral framework")) +
+  scale_y_continuous(labels = function(x) paste0(100*x, "%")) +
+  scale_fill_manual(values=power_palette) + 
+  ylab("") + xlab("") +
+  theme_2dii_ggplot() +
+  theme(axis.text = element_text(family="Helvetica", color="#1b324f", size = 14, margin= margin(0.5, 0.5, 0.5, 0.5))) +
+  theme(axis.title = element_text(family="Helvetica", color="#1b324f", size = 14, margin= margin(0.5, 0.5, 0.5, 0.5))) +
+  theme(legend.text = element_text(family="Helvetica", color="#1b324f",  size = 14, margin=margin(5, 5, 5, 5)))
+p
 
 
 
