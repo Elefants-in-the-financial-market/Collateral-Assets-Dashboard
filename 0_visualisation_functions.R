@@ -26,6 +26,12 @@ hybrid_green <- "#0E7969"; hybrid_blue <- "#50C3BA"; hybrid_orange <- "#FBAF3C"
 auto_palette<-c("#d0d7e1",	"#78c4d6",	"#1b324f")
 power_palette<-c("#7A2701",	"#a63603", 	"#fdbe85",	"#fd8d3c",	"#e6550d",	"#feedde")
 
+primary_blue_faded <- "#96ADCA"
+secondary_red_faded <- "#D290A1"
+oil_faded <- "#A49382"
+secondary_moss_green_faded <- "#99BEAB"
+power_faded <- "#F0CAA7"
+
 # fiveyear colors
 
 darkred<-"#FFFFCC"
@@ -58,51 +64,6 @@ translate <- function(data){
     data[data==translations[[i,1]]]<-translations[[i,2]]
   }
   return(data)
-}
-
-
-plot_techmix <- function(sectorname, market, market_label, axis_label, title, scenario_name, scenario_geography_choice){
-
-  
-  data <- bonds_portfolio %>%
-    filter(ald_sector==sectorname, scenario==scenario_name, year==startyear, 
-           scenario_geography==scenario_geography_choice) %>%
-    select(portfolio_name, technology, plan_tech_share) %>%
-    filter(portfolio_name!="Meta Portfolio")
-  
-  
-  data2<-market_bonds %>%
-    filter(ald_sector==sectorname, scenario==scenario_name & portfolio_name==market,
-           year==startyear, scenario_geography==scenario_geography_choice) %>%
-    select(portfolio_name, technology, plan_tech_share)
-  
-  data<-rbind(data, data2)
-  
-  data[data==market]<-market_label
-  
-  labelnames<-append(peergroups, market_label)
-  data$portfolio_name<-factor(data$portfolio_name, levels=labelnames)
-  
-  palette <- colors %>%
-    filter(sector==sectorname) %>%
-    select(!sector) %>%
-    select(where(~!is.na(.x)))
-  palette<-as.vector(t(palette))
-  
-  p<-ggplot(data=data, aes(fill=technology, x=portfolio_name, y=plan_carsten, width=.45)) +
-    geom_bar(stat="identity") +
-    ggtitle(title) +
-    scale_y_continuous(labels = function(x) paste0(100*x, "%")) +
-    scale_fill_manual(values=palette) + 
-    ylab(axis_label) + xlab("") +
-    theme_2dii_ggplot() +
-    theme(axis.text = element_text(family="Helvetica", color="#1b324f", size = 14, margin= margin(0.5, 0.5, 0.5, 0.5))) +
-    theme(axis.title = element_text(family="Helvetica", color="#1b324f", size = 14, margin= margin(0.5, 0.5, 0.5, 0.5))) +
-    theme(legend.text = element_text(family="Helvetica", color="#1b324f",  size = 14, margin=margin(5, 5, 5, 5)))
-  p
-  
-  return(p)
-  
 }
 
 
