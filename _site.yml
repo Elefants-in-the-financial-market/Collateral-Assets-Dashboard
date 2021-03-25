@@ -1,6 +1,7 @@
 name: "Climate alignment of the ECBs collateral"
 output_dir: _site
 exclude: ["src", "script-draft.sh", "README.md"]
+include: ["pages"]
 author: "test" 
 output: 
     html_document:
