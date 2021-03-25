@@ -1,5 +1,5 @@
 ---
-title: " "
+title: ' '
 ---
 
 ```{r setup, include=FALSE}
@@ -10,14 +10,10 @@ rmarkdown-dev-version: https://github.com/rstudio/rmarkdown/pull/1706
 themes bootswatch
 -->
 
-<!-- Title -->
-<h4 class="display-4"> Climate Alignment of the ECB's Collateral </h4>
 
 <!-- Metadata-container -->
-<div class="container">
 
 <!-- Quick Info -->
-<div class="container">
 <p>
 
 <br/>
@@ -26,7 +22,7 @@ themes bootswatch
 <strong> Analysed with [PACTA](https://www.transitionmonitor.com/) </strong>
 
 </p>
-</div>
+
 
 <br/>
 
@@ -40,7 +36,6 @@ themes bootswatch
 
 </div>
 
-</div>
 
 <br/>
 

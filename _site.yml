@@ -1,0 +1,16 @@
+name: "Climate alignment of the ECBs collateral"
+output_dir: _site
+exclude: ["src", "script-draft.sh", "README.md"]
+author: "test" 
+output: 
+    html_document:
+      toc: false
+      theme: 
+        version: 4
+#        bootswatch: flatly
+      include:
+        before_body: header.html
+        after_body: footer.html
+#      css: bootstrap.css
+        
+
