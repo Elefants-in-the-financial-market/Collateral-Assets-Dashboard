@@ -7,8 +7,8 @@ File-structure:
 
 Folders:
 - `src/`: contains all R-files to generate the analysis and plots
-- `pages/`: contains Rmd-files for website-subpages eg. old-reports,...
-- `plot/`: contains current plots for this day
+- `pages/`: contains Rmd+html-files for website-subpages eg. old-reports,...
+- `plots/`: contains current plots for this day
 - `_site/`: automatically generated when `rmarkdown::render_site()` is called. Contains exportable and viewable html
 
 Files: 
