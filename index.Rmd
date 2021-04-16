@@ -1,10 +1,18 @@
 ---
-title: 'Collateral Impact'
+title: '&nbsp;'
+pagetitle: "Collateral Impact"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+```{r echo=FALSE, eval=TRUE}
+#load metadata
+library("yaml")
+collateral_date <- read_yaml("metadata.yml")$collateral_date
+```
+
 <!-- using: bslib, htmltools
 rmarkdown-dev-version: https://github.com/rstudio/rmarkdown/pull/1706
 themes bootswatch
@@ -19,7 +27,7 @@ themes bootswatch
 <br/>
 <strong> Research and development: </strong> Fiona Spuler, Jakob Wessel, Santa Claus <br/>
 <strong> Data sources: </strong> Asset Resolution (?), [List of eligible Assets - ECB](https://www.ecb.europa.eu/paym/coll/assets/html/list-MID.en.html) <br/>
-<strong> Analysed with [PACTA](https://www.transitionmonitor.com/) </strong>
+<em> Analysed with [PACTA](https://www.transitionmonitor.com/) </em>
 
 </p>
 
@@ -27,7 +35,7 @@ themes bootswatch
 <br/>
 
 <!-- Text-description -->
-<div class="container">
+<div class="container-fluid">
 
 <p class="h5">Introduction</p>
 <p> 
@@ -41,7 +49,7 @@ themes bootswatch
 
 <!-- Time of data-retrieval -->
 <div class="alert alert-secondary" role="alert">
-<strong>Data: </strong> ECB Collateral list for the: <span class="text-danger"> 03.02.20 </span>. Retrieved from [List of eligible Assets - ECB](https://www.ecb.europa.eu/paym/coll/assets/html/list-MID.en.html)
+<strong>Data: </strong> ECB Collateral list for the: <span class="text-danger"> `r collateral_date` </span>. Retrieved from [List of eligible Assets - ECB](https://www.ecb.europa.eu/paym/coll/assets/html/list-MID.en.html)
 </div>
 
 <div class="container"> 

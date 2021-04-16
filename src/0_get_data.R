@@ -1,5 +1,8 @@
 library("lubridate")
+library("tidyverse")
 library(httr)
+library("yaml")
+library("here") # for relative paths
 
 #link <- "https://www.ecb.europa.eu/paym/coll/assets/html/dla/ea_MID/ea_csv_210108.csv"
 
@@ -27,3 +30,5 @@ if(as.numeric(today()+1-retrieval_date) > max_days_back){
 
 # If url found, then read in dataframe
 raw_data <- as_tibble(read.delim(paste0("https://www.ecb.europa.eu/paym/coll/assets/html/dla/ea_MID/ea_csv_", format(retrieval_date, "%y%m%d"),".csv"), fileEncoding="UTF-16"))
+
+write_yaml(data.frame(collateral_date = format(retrieval_date, "%d-%m-%Y")), paste0(here(), "/metadata.yml"))

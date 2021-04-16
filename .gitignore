@@ -1,5 +1,8 @@
-# Design Files
-/design_draft/_site/
+# Site-file. Ignore only for now
+_site/*
+
+# Metadata-files for internal use
+metadata.yml
 
 # History files
 .Rhistory

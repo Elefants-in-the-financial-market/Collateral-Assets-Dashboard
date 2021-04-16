@@ -1,0 +1,13 @@
+---
+title: '&nbsp;'
+pagetitle: "Contact us"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<!-- Title -->
+<h4 class="display-4"> Contact us </h4>
+
+If you are interested in an exchange about the results and possible policy actions, have feedback or any other inquiries, then feel free to contact us under xyz.
