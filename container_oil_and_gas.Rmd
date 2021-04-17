@@ -1,0 +1,151 @@
+---
+title: '&nbsp;'
+pagetitle: "Collateral Impact"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo=FALSE, eval=TRUE}
+#load metadata
+library("yaml")
+collateral_date <- read_yaml("metadata.yml")$collateral_date
+```
+<!-- TODO: delete above part, if merging all together -->
+
+<!-- Oil and Gas --> 
+
+<!-- Intro about the sector --> 
+<div class="container">
+<h1><a id="oil_and_gas">Oil & Gas</a></h1>
+<p> 
+Here we (aka Fiona) add some fancy text, to show how intelligent we (aka Fiona) are and how much we know about this sector. Just like "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+</p>
+</div
+<!-- /Intro about the sector -->
+
+<!-- Alignment-message - same color as szenario? --> 
+<div class="alert alert-danger" role="alert">
+You are not aligned!!! 
+</div>
+<!-- /Alignment-messagw--> 
+
+
+<br/>
+
+
+<!-- Five Year charts -->
+<div class="container">
+
+<!-- First row with charts -->
+<div class="row">
+  <div class="col">
+  <img src="plots/fiveyear_oil.png"  alt="...">
+  </div>
+  
+  <div class="col">
+  <img src="plots/fiveyear_gas.png"  alt="...">
+  </div>
+</div>
+<!-- /First row with charts -->
+
+<!-- Second row with legend -->
+<!-- TODO: Properly size + add explanation of line-colors -->
+<div class="row justify-content-md-center">
+  <div class="col-md-auto">
+  <img src="plots/legend.png"  alt="...">
+  </div>
+</div>
+<!-- /Second row with legend -->
+
+</div>
+<!-- /Five Year charts -->
+
+
+<br/>
+
+<!-- Results & Interpretation -->
+<div class="container">
+<p>
+Oil extraction of companies is set to increase in the next five years, not in line with even the most unambitious climate scenario. TODO: add interpretation to different lines. One gets similar results for the ‘potentially eligible’ list, but markedly different ones global bond market.
+Gas extraction is aligned with a Sustainable Development Scenario. This has been observed in previous assessments as well, but should be seen in light of existing cristicism on XYZ TODO: add that ausbau problematisch.
+</p>
+
+<p>
+Below the reader can find the geographical locations of oil and gas extraction by companies in the collateral assets scheme. Oil and gas production is located primarily outside of the EU, the US having the largest share of production for both fossil fuels. Notable other countries for Oil production include (ranked by oil production at sites in this country): Iraq, Angola, Norway, UAE, Brazil and Nigeria. For Gas production (ranked by gas production at sites in this country): Egypt, Norway, Australia, Trinidad & Tobago, Qatar, Nigeria. As highlighted by different authors including [here](https://www.cambridge.org/core/journals/national-institute-economic-review/article/abs/stranded-assets-and-sovereign-states/5379F112676DF91F18349E5C7B8AB624) the location of a lot of oil and gas assets in sovereign countries highly dependent on those, might mean that a substantial part of these assets could become stranded. This means that it is not only important to consider the transition risk of the companies in the collateral framework that can directly contribute to price instability, but also the transition risk faced by highly fossil fuel dependent economies which can cause knock-on effects for further causes of risk. TODO: add why this might be a problem for the goal of the collateral framework.
+
+TODO: we could include human rights violations and geopolitical conflict here, but do we still address economics-target-group then?
+TODO: add haircut-analysis
+</p>
+
+</div>
+<!-- /Results & Interpretation -->
+
+
+<br/>
+<br/>
+ 
+<!-- Companies and Oil+Gas-Worldmap -->
+<div class="container">
+<!-- First and only row -->
+<div class="row">
+
+<!-- Column with Companies -->
+<div class="col">
+<img src="plots/tree.png"  alt="...">
+</div>
+<!-- /Column with Companies -->
+
+
+<!-- Column with Maps -->
+<div class="col">
+
+<!-- Tabs + Navigation - Maps -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+
+<!-- Oil-tab-name -->
+<li class="nav-item">
+<a class="nav-link active" id="oil_map-tab" data-toggle="tab" href="#oil_map" role="tab" aria-controls="oil_map" aria-selected="true">Oil - worldmap</a>
+</li>
+<!-- /Oil-tab-name -->
+
+<!-- Gas-tab-name -->
+<li class="nav-item">
+<a class="nav-link" id="gas_map-tab" data-toggle="tab" href="#gas_map" role="tab" aria-controls="gas_map" aria-selected="false">Gas - worldmap</a>
+</li>
+<!-- /Gas-tab-name -->
+
+</ul>
+<!-- /Tabs + Navigation - Maps -->
+
+
+<!-- Content - Maps -->
+<div class="tab-content" id="myTabContent">
+
+<!-- Oil-map -->
+<div class="tab-pane fade show active" id="oil_map" role="tabpanel" aria-labelledby="oil_map-tab">
+<img src="plots/map_oil.png"  alt="...">
+</div>
+<!-- /Oil-map -->
+
+<!-- Gas-map -->
+<div class="tab-pane fade" id="gas_map" role="tabpanel" aria-labelledby="gas_map-tab">
+<img src="plots/map_oil.png"  alt="...">
+</div>
+<!-- /Gas-map -->
+
+</div>
+<!-- /Content - Maps -->
+
+</div>
+<!-- /Column with Maps -->
+
+</div>
+<!-- /First and only row -->
+
+</div>
+<!-- /Companies and Oil+Gas-Worldmap -->
+
+
+

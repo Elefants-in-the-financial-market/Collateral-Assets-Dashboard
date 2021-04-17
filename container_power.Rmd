@@ -1,0 +1,172 @@
+---
+title: '&nbsp;'
+pagetitle: "Collateral Impact"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo=FALSE, eval=TRUE}
+#load metadata
+library("yaml")
+collateral_date <- read_yaml("metadata.yml")$collateral_date
+```
+
+<!-- Power capacity --> 
+
+<!-- Intro about the sector --> 
+<div class="container">
+<h1><a id="power">Power capacity</a></h1>
+<p> 
+Here we (aka Fiona) add some fancy text, to show how intelligent we (aka Fiona) are and how much we know about this sector. Just like "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+</p>
+</div
+<!-- /Intro about the sector -->
+
+<!-- Alignment-message - same color as szenario? --> 
+<div class="alert alert-danger" role="alert">
+You are not aligned!!! 
+</div>
+<!-- /Alignment-messagw--> 
+
+
+<br/>
+
+
+<!-- Five Year charts -->
+<div class="container">
+
+<!-- First row with charts -->
+<div class="row">
+  <div class="col">
+  <img src="plots/fiveyear_coalcap.png"  alt="...">
+  </div>
+  
+  <div class="col">
+  <img src="plots/fiveyear_gascap.png"  alt="...">
+  </div>
+</div>
+<!-- /First row with charts -->
+
+<!-- Second row with charts -->
+<div class="row">
+  <div class="col">
+  <img src="plots/fiveyear_ren.png"  alt="...">
+  </div>
+  
+  <div class="col">
+  <img src="plots/fiveyear_oilcap.png"  alt="...">
+  </div>
+</div>
+<!-- /Second row with charts -->
+
+<!-- Third row with legend -->
+<!-- TODO: Properly size + add explanation of line-colors -->
+<div class="row justify-content-md-center">
+  <div class="col-md-auto">
+  <img src="plots/legend.png"  alt="...">
+  </div>
+</div>
+<!-- /Third row with legend -->
+
+</div>
+<!-- /Five Year charts -->
+
+
+<br/>
+
+<!-- Results & Interpretation -->
+<div class="container">
+<p>
+In none of the technologies the companies in the collateral assets scheme are aligned, often not even with a current policy-scenario. This is especially persistent in oil power capacity. TODO: add some more interpretation´
+</p>
+
+<p>
+Below the reader can find the geographical locations of oil and gas extraction by companies in the collateral assets scheme. 
+Power markets are nationally distinct, therefore decarbonization pathways are also very different between different countries
+TODO: add haircut-analysis
+</p>
+
+</div>
+<!-- /Results & Interpretation -->
+
+
+<br/>
+<br/>
+ 
+<!-- Companies and Power-capacities-Worldmap -->
+<div class="container">
+<!-- First and only row -->
+<div class="row">
+
+<!-- Column with Companies -->
+<div class="col">
+<img src="plots/tree.png"  alt="...">
+</div>
+<!-- /Column with Companies -->
+
+
+<!-- Column with Maps -->
+<div class="col">
+
+<!-- Tabs + Navigation - Maps -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+
+<!-- Coalcap-tab-name -->
+<li class="nav-item">
+<a class="nav-link active" id="coalcap_map-tab" data-toggle="tab" href="#coalcap_map" role="tab" aria-controls="coalcap_map" aria-selected="true">Coal capacity</a>
+</li>
+<!-- /Coalcap-tab-name -->
+
+<!-- Ren-tab-name -->
+<li class="nav-item">
+<a class="nav-link" id="ren_map-tab" data-toggle="tab" href="#ren_map" role="tab" aria-controls="ren_map" aria-selected="false">Renewables capacity</a>
+</li>
+<!-- /Ren-tab-name -->
+
+<!-- Hydrocap-tab-name -->
+<li class="nav-item">
+<a class="nav-link" id="hydrocap_map-tab" data-toggle="tab" href="#hydrocap_map" role="tab" aria-controls="hydrocap_map" aria-selected="false">Hydro Power capacity</a>
+</li>
+<!-- /Hydrocap-tab-name -->
+
+</ul>
+<!-- /Tabs + Navigation - Maps -->
+
+
+<!-- Content - Maps -->
+<div class="tab-content" id="myTabContent">
+
+<!-- Coalcap-map -->
+<div class="tab-pane fade show active" id="coalcap_map" role="tabpanel" aria-labelledby="coalcap_map-tab">
+<img src="plots/map_coalcap.png"  alt="...">
+</div>
+<!-- /Coalcap-map -->
+
+<!-- Ren-map -->
+<div class="tab-pane fade" id="ren_map" role="tabpanel" aria-labelledby="ren_map-tab">
+<img src="plots/map_ren.png"  alt="...">
+</div>
+<!-- /Ren-map -->
+
+<!-- Hydrocap-map -->
+<div class="tab-pane fade" id="hydrocap_map" role="tabpanel" aria-labelledby="hydrocap_map-tab">
+<img src="plots/map_hydrocap.png"  alt="...">
+</div>
+<!-- /Hydrocap-map -->
+
+</div>
+<!-- /Content - Maps -->
+
+</div>
+<!-- /Column with Maps -->
+
+</div>
+<!-- /First and only row -->
+
+</div>
+<!-- /Companies and Power-capacities-Worldmap -->
+
+
+

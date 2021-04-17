@@ -163,6 +163,13 @@ You are not aligned!!!
 <img src="plots/fiveyear_gas.png"  alt="...">
 </div>
 </div>
+
+<div class="row">
+<div class="col align-self-center">
+<img src="plots/legend.png" width = "50%" alt="...">
+</div>
+</div>
+
 </div>
 
 <!-- Alternative:
@@ -187,7 +194,7 @@ Here we add some fancy text, to show how intelligent we are and how much we know
 
 <!-- Column with Companies -->
 <div class="col">
-<img src="plots/tree_new.png"  alt="...">
+<img src="plots/tree.png"  alt="...">
 </div>
 
 <!-- Column with Maps -->
@@ -221,3 +228,7 @@ Here we add some fancy text, to show how intelligent we are and how much we know
 </div>
 </div>
 
+<!-- TODO: uncomment this, if merging all together 
+```{r child = 'container_oil_and_gas.Rmd'}
+```
+-->
