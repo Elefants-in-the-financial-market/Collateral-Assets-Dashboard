@@ -1,0 +1,55 @@
+<!-- Methodology -->
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+<h1>Methodology</h1>
+
+
+<p>
+
+The analysis builds on the [PACTA (Paris Agreement Capital Transition Assessment)](https://www.transitionmonitor.com/) methodology developed by the 2° Investing Initiative (2DII) and a database of physical assets as well as forward looking production plans in eight key climate relevant sectors administered by Asset Resolution.<br/>
+
+PACTA assesses the alignment of the technology-specific production plans of companies with decarbonization scenarios. The input data are asset-level data and for a time horizon of five years the output is an alignment measure capturing the discrepancy between company production plans and production plans set out in decarbonization scenarios.  We do this analysis for the following sectors: light-and heavy-duty vehicles, power, oil and gas production. TODO: smth about the relevance of these sectors. <br/>
+
+The data used for the analysis is as below: <br/>
+
+</p>
+
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Type of data</th>
+      <th scope="col">Description</th>
+      <th scope="col">Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Financial data</td>
+      <td>Used to assign securities to sectors and link them to parent and subsidiary companies.</td>
+      <td>Bloomberg</td>
+    </tr>
+     <tr>
+      <td>Asset-Level data</td>
+      <td>2DII sources data from independent industry data providers who collect data on individual assets in climate-relevant industries using a variety of research capabilities, including web scraping, desk research and direct engagement with industry. These asset-level datasets cover more than 230,000 individual assets (power plants, oil fields etc) and account for more than 75% of global carbon emissions. </td>
+      <td>Asset Resolution (based on sector-specific data providers)</td>
+    </tr>
+    <tr>
+      <td>Decarbonization scenarios</td>
+      <td>Production plans are compared to climate scenarios published by the International Energy Agency and Joint Research Centre of the European Commission.</td>
+      <td>International Energy Agency</td>
+    </tr>
+    <tr>
+      <td>ECB eligible assets</td>
+      <td>List of all assets in the ECB's collateral. </td>
+      <td>ECB - Website</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> 
+More about the methodology can be found here (TODO: add link. And do we need a methodology-page?)
+</p>
+
+
+</div>
+</div>

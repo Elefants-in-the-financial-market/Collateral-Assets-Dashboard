@@ -1,0 +1,44 @@
+<!-- Overview -->
+<div class="container">
+<div class="card-group"> 
+
+
+<div class="card">
+
+<div class="card-body">
+<h5 class="card-title"><a href="#oil_and_gas" role="button" class="btn btn-danger">Oil and Gas</a></h5>
+<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+<p class="card-text"><small class="text-muted">Eligible assets from the `r collateral_date`. </small></p>
+</div>
+
+<img class="card-img-bottom" src="plots/fiveyear_oil.png" alt="Card image cap">
+
+</div>
+
+
+<div class="card">
+
+<div class="card-body">
+<h5 class="card-title"><a href="#power" role="button" class="btn btn-warning">Power Capacity</a></h5>
+<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+<p class="card-text"><small class="text-muted">Eligible assets from the `r collateral_date`.</small></p>
+</div>
+<img class="card-img-bottom" src="plots/fiveyear_coalcap.png" alt="Card image cap">
+
+</div>
+
+
+<div class="card">
+
+<div class="card-body">
+<h5 class="card-title"><a href="#auto" role="button" class="btn btn-info">Automotive Production</a></h5>
+<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+<p class="card-text"><small class="text-muted">Eligible assets from the `r collateral_date`.</small></p>
+</div>
+<img class="card-img-bottom" src="plots/fiveyear_hybrid.png" alt="Card image cap">
+
+</div>
+
+
+</div>
+</div>

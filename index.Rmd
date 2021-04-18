@@ -35,9 +35,9 @@ themes bootswatch
 <br/>
 
 <!-- Text-description -->
-<div class="container-fluid">
+<div class="container">
 
-<p class="h5">Introduction</p>
+<h5>Introduction</h5>
 <p> 
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 </p>
@@ -47,89 +47,43 @@ themes bootswatch
 
 <br/>
 
-<!-- Time of data-retrieval -->
+<!-- Retrieval banner -->
 <div class="alert alert-secondary" role="alert">
 <strong>Data: </strong> ECB Collateral list for the: <span class="text-danger"> `r collateral_date` </span>. Retrieved from [List of eligible Assets - ECB](https://www.ecb.europa.eu/paym/coll/assets/html/list-MID.en.html)
 </div>
 
+
+</br>
+
+
+<!-- Key findings -->
 <div class="container"> 
-<h2> Key findings </h2>
-<p>
-<ul>
-<li> Key finding 1 (worst sectors/relevant ones + Legende)</li>
-<li> Key finding 2</li>
-<li> Key finding 3</li>
-</ul>
-</p>
+  <h2> Key findings </h2>
+  <p>
+  <ul>
+  <li> Key finding 1 (worst sectors/relevant ones + Legende)</li>
+  <li> Key finding 2</li>
+  <li> Key finding 3</li>
+  </ul>
+  </p>
 </div>
-
-<!-- Vertical divider -->
-
-<hr>
-
-<!-- Main part -->
-
-<!-- Overview -->
-<div class="container">
-<div class="card-group"> 
-
-
-<div class="card">
-
-<div class="card-body">
-<h5 class="card-title">Coal</h5>
-<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-</div>
-<img class="card-img-bottom" src="plots/fiveyear_coalcap.png" alt="Card image cap">
-
-</div>
-
-
-<div class="card">
-
-<div class="card-body">
-<h5 class="card-title">Hybrid</h5>
-<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-</div>
-<img class="card-img-bottom" src="plots/fiveyear_hybrid.png" alt="Card image cap">
-
-</div>
-
-
-<div class="card">
-
-<div class="card-body">
-<h5 class="card-title"><button type="button" class="btn btn-danger" href="#oil_and_gas">Oil</button></h5>
-<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-</div>
-<img class="card-img-bottom" src="plots/fiveyear_oil.png" alt="Card image cap">
-
-</div>
-
-
-</div>
-</div>
-
-<!-- End Beginning-Section -->
 
 
 <br/>
 <hr>
 
 
-<!-- Methodology -->
-<div class="jumbotron jumbotron-fluid">
-<div class="container">
-<h1>Methodology</h1>
-<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-</div>
-</div>
+```{r child = 'containers/container_cards.Rmd'}
+```
+<!-- End Beginning-Section -->
 
+<br/>
+<hr>
 
+```{r child = 'containers/container_methodology.Rmd'}
+```
 
+<br/>
 <hr>
 
 
@@ -145,7 +99,6 @@ themes bootswatch
 ```
 
 <br/>
-
 <hr>
 
 ```{r child = 'containers/container_auto.Rmd'}

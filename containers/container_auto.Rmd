@@ -2,7 +2,7 @@
 
 <!-- Intro about the sector --> 
 <div class="container">
-<h1><a id="automotive">Automotive Production</a></h1>
+<h1><a id="auto">Automotive Production</a></h1>
 <p> 
 Here we (aka Fiona) add some fancy text, to show how intelligent we (aka Fiona) are and how much we know about this sector. Just like "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 </p>
