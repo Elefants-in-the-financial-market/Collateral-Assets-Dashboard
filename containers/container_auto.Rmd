@@ -1,0 +1,82 @@
+<!-- Auto --> 
+
+<!-- Intro about the sector --> 
+<div class="container">
+<h1><a id="automotive">Automotive Production</a></h1>
+<p> 
+Here we (aka Fiona) add some fancy text, to show how intelligent we (aka Fiona) are and how much we know about this sector. Just like "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+</p>
+</div
+<!-- /Intro about the sector -->
+
+<!-- Alignment-message - same color as szenario? --> 
+<div class="alert alert-danger" role="alert">
+You are not aligned!!! 
+</div>
+<!-- /Alignment-messagw--> 
+
+
+<br/>
+
+
+<!-- Five Year charts -->
+<div class="container">
+
+<!-- First row with charts -->
+<div class="row">
+  <div class="col">
+  <img src="plots/fiveyear_ice.png"  alt="...">
+  </div>
+  
+  <div class="col">
+  <img src="plots/fiveyear_hybrid.png"  alt="...">
+  </div>
+</div>
+<!-- /First row with charts -->
+
+<!-- Second row with one chart -->
+<div class="row justify-content-sm-center">
+  <div class="col-6">
+  <img src="plots/fiveyear_electric.png"  alt="...">
+  </div>
+</div>
+<!-- /Second row with charts -->
+
+<!-- Third row with legend -->
+<!-- TODO: Properly size + add explanation of line-colors -->
+<div class="row justify-content-md-center">
+  <div class="col-md-auto">
+  <img src="plots/legend.png"  alt="...">
+  </div>
+</div>
+<!-- /Third row with legend -->
+
+</div>
+<!-- /Five Year charts -->
+
+
+<br/>
+
+<!-- Results & Interpretation -->
+<div class="container">
+<p>
+THE ECB's collateral assets scheme is not aligned in this sector either. Especially in the production of hybrid vehicles it is lagging behind -- even behind a current policy scenario, exposing companies in this sector to additional risks. The technology mix is nevertheless pretty similar across the three comparison groups. 
+TODO: add some more interpretation´
+</p>
+
+
+<p>
+One can also look at the technology mix of the ECB collateral framework in comparison with the global bond market and the EU economy.
+</p>
+
+<img src="plots/techmix_auto.png"  alt="...">
+
+<p>
+The technology mix seems generally to agree, but the ECB elligible assets have a slightly higher share in ICE and less investments in electric vehicles, than the EU economy.
+</p>
+
+</div>
+<!-- /Results & Interpretation -->
+
+
+ 

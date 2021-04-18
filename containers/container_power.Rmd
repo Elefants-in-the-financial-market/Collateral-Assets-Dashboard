@@ -1,18 +1,3 @@
----
-title: '&nbsp;'
-pagetitle: "Collateral Impact"
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r echo=FALSE, eval=TRUE}
-#load metadata
-library("yaml")
-collateral_date <- read_yaml("metadata.yml")$collateral_date
-```
-
 <!-- Power capacity --> 
 
 <!-- Intro about the sector --> 
@@ -168,5 +153,23 @@ TODO: add haircut-analysis
 </div>
 <!-- /Companies and Power-capacities-Worldmap -->
 
+
+<br/>
+
+
+<!-- Techmix introduction -->
+<div class="container">
+<p>
+One can also look at the technology mix of the ECB collateral framework in comparison with the global bond market and the EU economy.
+</p>
+
+<img src="plots/techmix_power.png"  alt="...">
+
+<p>
+As one can see there a bigger disparities between the ECB eligible assets and the EU Economy, as well as the global bond market. This questions the proclaimed "Market neutral investment" by the ECB.
+</p>
+
+</div>
+<!-- /Results & Interpretation -->
 
 
