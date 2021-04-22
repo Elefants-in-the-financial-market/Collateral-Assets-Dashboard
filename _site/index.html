@@ -13,6 +13,7 @@
 
 <title>Collateral Impact</title>
 
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-3.5.1/jquery-3.5.1.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <link href="site_libs/bootstrap-4.5.3/bootstrap.min.css" rel="stylesheet" />
@@ -179,7 +180,7 @@ pre code {
         <li class="nav-item"><a class="nav-link" href="PageB.html">Collateral Framework - Impact</a></li>
         <li class="nav-item"><a class="nav-link" href="PageB.html">Policy Implications</a></li>
         <li class="nav-item"><a class="nav-link" href="pages/previous_collaterals/previous_collaterals.html">Previous Frameworks</a></li>
-        <li class="nav-item"><a class="nav-link" href="PageA.html">&#9993; Contact us</a></li> 
+        <li class="nav-item"><a class="nav-link" href="pages/contact_us.html">&#9993; Contact us</a></li> 
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -211,7 +212,7 @@ Collateral Monitor
 
 
 
-<h1 class="title toc-ignore">Collateral Impact</h1>
+<h1 class="title toc-ignore"> </h1>
 
 </div>
 
@@ -223,23 +224,25 @@ themes bootswatch
 <!-- Metadata-container -->
 <!-- Quick Info -->
 <p>
-<p><br/> <strong> Research and development: </strong> Fiona Spuler, Jakob Wessel, Santa Claus <br/> <strong> Data sources: </strong> Asset Resolution (?), <a href="https://www.ecb.europa.eu/paym/coll/assets/html/list-MID.en.html">List of eligible Assets - ECB</a> <br/> <strong> Analysed with <a href="https://www.transitionmonitor.com/">PACTA</a> </strong></p>
+<p><br/> <strong> Research and development: </strong> Fiona Spuler, Jakob Wessel, Santa Claus <br/> <strong> Data sources: </strong> Asset Resolution (?), <a href="https://www.ecb.europa.eu/paym/coll/assets/html/list-MID.en.html">List of eligible Assets - ECB</a> <br/> <em> Analysed with <a href="https://www.transitionmonitor.com/">PACTA</a> </em></p>
 </p>
 <p><br/></p>
 <!-- Text-description -->
 <div class="container">
-<p class="h5">
+<h5>
 Introduction
-</p>
+</h5>
 <p>
 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
 </p>
 </div>
 <p><br/></p>
-<!-- Time of data-retrieval -->
+<!-- Retrieval banner -->
 <div class="alert alert-secondary" role="alert">
-<p><strong>Data: </strong> ECB Collateral list for the: <span class="text-danger"> 03.02.20 </span>. Retrieved from <a href="https://www.ecb.europa.eu/paym/coll/assets/html/list-MID.en.html">List of eligible Assets - ECB</a></p>
+<p><strong>Data: </strong> ECB Collateral list for the: <span class="text-danger"> 26-03-2021 </span>. Retrieved from <a href="https://www.ecb.europa.eu/paym/coll/assets/html/list-MID.en.html">List of eligible Assets - ECB</a></p>
 </div>
+<p></br></p>
+<!-- Key findings -->
 <div class="container">
 <h2>
 Key findings
@@ -258,22 +261,35 @@ Key finding 3
 </ul>
 </p>
 </div>
-<!-- Vertical divider -->
+<br/>
 <hr>
-<!-- Main part -->
 <!-- Overview -->
 <div class="container">
 <div class="card-group">
 <div class="card">
 <div class="card-body">
 <h5 class="card-title">
-Coal
+<a href="#oil_and_gas" role="button" class="btn btn-danger">Oil and Gas</a>
 </h5>
 <p class="card-text">
 This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
 </p>
 <p class="card-text">
-<small class="text-muted">Last updated 3 mins ago</small>
+<small class="text-muted">Eligible assets from the 26-03-2021. </small>
+</p>
+</div>
+<p><img class="card-img-bottom" src="plots/fiveyear_oil.png" alt="Card image cap"></p>
+</div>
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">
+<a href="#power" role="button" class="btn btn-warning">Power Capacity</a>
+</h5>
+<p class="card-text">
+This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+</p>
+<p class="card-text">
+<small class="text-muted">Eligible assets from the 26-03-2021.</small>
 </p>
 </div>
 <p><img class="card-img-bottom" src="plots/fiveyear_coalcap.png" alt="Card image cap"></p>
@@ -281,32 +297,16 @@ This is a wider card with supporting text below as a natural lead-in to addition
 <div class="card">
 <div class="card-body">
 <h5 class="card-title">
-Hybrid
+<a href="#auto" role="button" class="btn btn-info">Automotive Production</a>
 </h5>
 <p class="card-text">
 This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
 </p>
 <p class="card-text">
-<small class="text-muted">Last updated 3 mins ago</small>
+<small class="text-muted">Eligible assets from the 26-03-2021.</small>
 </p>
 </div>
 <p><img class="card-img-bottom" src="plots/fiveyear_hybrid.png" alt="Card image cap"></p>
-</div>
-<div class="card">
-<div class="card-body">
-<h5 class="card-title">
-<button type="button" class="btn btn-danger" href="#oil_and_gas">
-Oil
-</button>
-</h5>
-<p class="card-text">
-This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-</p>
-<p class="card-text">
-<small class="text-muted">Last updated 3 mins ago</small>
-</p>
-</div>
-<p><img class="card-img-bottom" src="plots/fiveyear_oil.png" alt="Card image cap"></p>
 </div>
 </div>
 </div>
@@ -319,13 +319,79 @@ This is a wider card with supporting text below as a natural lead-in to addition
 <h1>
 Methodology
 </h1>
-<p class="lead">
-This is a modified jumbotron that occupies the entire horizontal space of its parent.
+<p>
+<p>The analysis builds on the <a href="https://www.transitionmonitor.com/">PACTA (Paris Agreement Capital Transition Assessment)</a> methodology developed by the 2° Investing Initiative (2DII) and a database of physical assets as well as forward looking production plans in eight key climate relevant sectors administered by Asset Resolution.<br/></p>
+<p>PACTA assesses the alignment of the technology-specific production plans of companies with decarbonization scenarios. The input data are asset-level data and for a time horizon of five years the output is an alignment measure capturing the discrepancy between company production plans and production plans set out in decarbonization scenarios. We do this analysis for the following sectors: light-and heavy-duty vehicles, power, oil and gas production. TODO: smth about the relevance of these sectors. <br/></p>
+<p>The data used for the analysis is as below: <br/></p>
+</p>
+<table class="table table-bordered">
+<thead class="thead-dark">
+<tr>
+<th scope="col">
+Type of data
+</th>
+<th scope="col">
+Description
+</th>
+<th scope="col">
+Source
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Financial data
+</td>
+<td>
+Used to assign securities to sectors and link them to parent and subsidiary companies.
+</td>
+<td>
+Bloomberg
+</td>
+</tr>
+<tr>
+<td>
+Asset-Level data
+</td>
+<td>
+2DII sources data from independent industry data providers who collect data on individual assets in climate-relevant industries using a variety of research capabilities, including web scraping, desk research and direct engagement with industry. These asset-level datasets cover more than 230,000 individual assets (power plants, oil fields etc) and account for more than 75% of global carbon emissions.
+</td>
+<td>
+Asset Resolution (based on sector-specific data providers)
+</td>
+</tr>
+<tr>
+<td>
+Decarbonization scenarios
+</td>
+<td>
+Production plans are compared to climate scenarios published by the International Energy Agency and Joint Research Centre of the European Commission.
+</td>
+<td>
+International Energy Agency
+</td>
+</tr>
+<tr>
+<td>
+ECB eligible assets
+</td>
+<td>
+List of all assets in the ECB’s collateral.
+</td>
+<td>
+ECB - Website
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+More about the methodology can be found here (TODO: add link. And do we need a methodology-page?)
 </p>
 </div>
 </div>
+<br/>
 <hr>
-<!-- Standard-components -->
 <!-- Oil and Gas -->
 <!-- Intro about the sector -->
 <div class="container">
@@ -340,61 +406,279 @@ Here we (aka Fiona) add some fancy text, to show how intelligent we (aka Fiona) 
 <div class="alert alert-danger" role="alert">
 <p>You are not aligned!!!</p>
 </div>
+<!-- /Alignment-messagw-->
 <p><br/></p>
 <!-- Five Year charts -->
 <div class="container">
+<!-- First row with charts -->
 <div class="row">
-<div class="col-sm">
-<p><img src="plots/fiveyear_oil.png"  alt="..."></p>
+<div class="col">
+<img src="plots/fiveyear_oil.png"  alt="...">
 </div>
-<div class="col-sm">
-<p><img src="plots/fiveyear_gas.png"  alt="..."></p>
+<div class="col">
+<img src="plots/fiveyear_gas.png"  alt="...">
 </div>
 </div>
+<!-- /First row with charts -->
+<!-- Second row with legend -->
+<!-- TODO: Properly size + add explanation of line-colors -->
+<div class="row justify-content-md-center">
+<div class="col-md-auto">
+<img src="plots/legend.png"  alt="...">
 </div>
-<!-- Alternative:
-<img src="plots/fiveyear_oil.png" width="40%" class="rounded float-left" alt="...">
-<img src="plots/fiveyear_gas.png" width="40%" class="rounded float-right" alt="...">
--->
+</div>
+<!-- /Second row with legend -->
+</div>
+<!-- /Five Year charts -->
 <p><br/></p>
-<!-- Results, Interpretation + Haircut -->
+<!-- Results & Interpretation -->
 <div class="container">
 <p>
-Some fancy text explaing our results eg. haircut <strong> 2030 </strong> Here we add some fancy text, to show how intelligent we are and how much we know about this sector. Just like “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
+Oil extraction of companies is set to increase in the next five years, not in line with even the most unambitious climate scenario. TODO: add interpretation to different lines. One gets similar results for the ‘potentially eligible’ list, but markedly different ones global bond market. Gas extraction is aligned with a Sustainable Development Scenario. This has been observed in previous assessments as well, but should be seen in light of existing cristicism on XYZ TODO: add that ausbau problematisch.
+</p>
+<p>
+<p>Below the reader can find the geographical locations of oil and gas extraction by companies in the collateral assets scheme. Oil and gas production is located primarily outside of the EU, the US having the largest share of production for both fossil fuels. Notable other countries for Oil production include (ranked by oil production at sites in this country): Iraq, Angola, Norway, UAE, Brazil and Nigeria. For Gas production (ranked by gas production at sites in this country): Egypt, Norway, Australia, Trinidad &amp; Tobago, Qatar, Nigeria. As highlighted by different authors including <a href="https://www.cambridge.org/core/journals/national-institute-economic-review/article/abs/stranded-assets-and-sovereign-states/5379F112676DF91F18349E5C7B8AB624">here</a> the location of a lot of oil and gas assets in sovereign countries highly dependent on those, might mean that a substantial part of these assets could become stranded. This means that it is not only important to consider the transition risk of the companies in the collateral framework that can directly contribute to price instability, but also the transition risk faced by highly fossil fuel dependent economies which can cause knock-on effects for further causes of risk. TODO: add why this might be a problem for the goal of the collateral framework.</p>
+TODO: we could include human rights violations and geopolitical conflict here, but do we still address economics-target-group then? TODO: add haircut-analysis
 </p>
 </div>
+<!-- /Results & Interpretation -->
 <p><br/> <br/></p>
 <!-- Companies and Oil+Gas-Worldmap -->
 <div class="container">
+<!-- First and only row -->
 <div class="row">
 <!-- Column with Companies -->
 <div class="col">
-<p><img src="plots/tree_new.png"  alt="..."></p>
+<p><img src="plots/tree.png"  alt="..."></p>
 </div>
+<!-- /Column with Companies -->
 <!-- Column with Maps -->
 <div class="col">
-<!-- Tabs for Maps -->
+<!-- Tabs + Navigation - Maps -->
 <ul class="nav nav-tabs" id="myTab" role="tablist">
-<!-- Navigation - Maps -->
+<!-- Oil-tab-name -->
 <li class="nav-item">
 <a class="nav-link active" id="oil_map-tab" data-toggle="tab" href="#oil_map" role="tab" aria-controls="oil_map" aria-selected="true">Oil - worldmap</a>
 </li>
+<!-- /Oil-tab-name -->
+<!-- Gas-tab-name -->
 <li class="nav-item">
 <a class="nav-link" id="gas_map-tab" data-toggle="tab" href="#gas_map" role="tab" aria-controls="gas_map" aria-selected="false">Gas - worldmap</a>
 </li>
+<!-- /Gas-tab-name -->
 </ul>
+<!-- /Tabs + Navigation - Maps -->
 <!-- Content - Maps -->
 <div id="myTabContent" class="tab-content">
+<!-- Oil-map -->
 <div id="oil_map" class="tab-pane fade show active" role="tabpanel" aria-labelledby="oil_map-tab">
-<p><img src="plots/map_oil.png"></p>
+<p><img src="plots/map_oil.png"  alt="..."></p>
 </div>
+<!-- /Oil-map -->
+<!-- Gas-map -->
 <div id="gas_map" class="tab-pane fade" role="tabpanel" aria-labelledby="gas_map-tab">
-<p><img src="plots/map_oil.png"></p>
+<p><img src="plots/map_gas.png"  alt="..."></p>
+</div>
+<!-- /Gas-map -->
+</div>
+<!-- /Content - Maps -->
+</div>
+<!-- /Column with Maps -->
+</div>
+<!-- /First and only row -->
+</div>
+<!-- /Companies and Oil+Gas-Worldmap -->
+<br/>
+<hr>
+<!-- Power capacity -->
+<!-- Intro about the sector -->
+<div class="container">
+<h1>
+<a id="power">Power capacity</a>
+</h1>
+<p>
+Here we (aka Fiona) add some fancy text, to show how intelligent we (aka Fiona) are and how much we know about this sector. Just like “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
+</p>
+</div>
+<!-- Alignment-message - same color as szenario? -->
+<div class="alert alert-danger" role="alert">
+<p>You are not aligned!!!</p>
+</div>
+<!-- /Alignment-messagw-->
+<p><br/></p>
+<!-- Five Year charts -->
+<div class="container">
+<!-- First row with charts -->
+<div class="row">
+<div class="col">
+<img src="plots/fiveyear_coalcap.png"  alt="...">
+</div>
+<div class="col">
+<img src="plots/fiveyear_gascap.png"  alt="...">
 </div>
 </div>
+<!-- /First row with charts -->
+<!-- Second row with charts -->
+<div class="row">
+<div class="col">
+<img src="plots/fiveyear_ren.png"  alt="...">
+</div>
+<div class="col">
+<img src="plots/fiveyear_oilcap.png"  alt="...">
 </div>
 </div>
+<!-- /Second row with charts -->
+<!-- Third row with legend -->
+<!-- TODO: Properly size + add explanation of line-colors -->
+<div class="row justify-content-md-center">
+<div class="col-md-auto">
+<img src="plots/legend.png"  alt="...">
 </div>
+</div>
+<!-- /Third row with legend -->
+</div>
+<!-- /Five Year charts -->
+<p><br/></p>
+<!-- Results & Interpretation -->
+<div class="container">
+<p>
+In none of the technologies the companies in the collateral assets scheme are aligned, often not even with a current policy-scenario. This is especially persistent in oil power capacity. TODO: add some more interpretation´
+</p>
+<p>
+Below the reader can find the geographical locations of oil and gas extraction by companies in the collateral assets scheme. Power markets are nationally distinct, therefore decarbonization pathways are also very different between different countries TODO: add haircut-analysis
+</p>
+</div>
+<!-- /Results & Interpretation -->
+<p><br/> <br/></p>
+<!-- Companies and Power-capacities-Worldmap -->
+<div class="container">
+<!-- First and only row -->
+<div class="row">
+<!-- Column with Companies -->
+<div class="col">
+<p><img src="plots/tree.png"  alt="..."></p>
+</div>
+<!-- /Column with Companies -->
+<!-- Column with Maps -->
+<div class="col">
+<!-- Tabs + Navigation - Maps -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+<!-- Coalcap-tab-name -->
+<li class="nav-item">
+<a class="nav-link active" id="coalcap_map-tab" data-toggle="tab" href="#coalcap_map" role="tab" aria-controls="coalcap_map" aria-selected="true">Coal capacity</a>
+</li>
+<!-- /Coalcap-tab-name -->
+<!-- Ren-tab-name -->
+<li class="nav-item">
+<a class="nav-link" id="ren_map-tab" data-toggle="tab" href="#ren_map" role="tab" aria-controls="ren_map" aria-selected="false">Renewables capacity</a>
+</li>
+<!-- /Ren-tab-name -->
+<!-- Hydrocap-tab-name -->
+<li class="nav-item">
+<a class="nav-link" id="hydrocap_map-tab" data-toggle="tab" href="#hydrocap_map" role="tab" aria-controls="hydrocap_map" aria-selected="false">Hydro Power capacity</a>
+</li>
+<!-- /Hydrocap-tab-name -->
+</ul>
+<!-- /Tabs + Navigation - Maps -->
+<!-- Content - Maps -->
+<div id="myTabContent" class="tab-content">
+<!-- Coalcap-map -->
+<div id="coalcap_map" class="tab-pane fade show active" role="tabpanel" aria-labelledby="coalcap_map-tab">
+<p><img src="plots/map_coalcap.png"  alt="..."></p>
+</div>
+<!-- /Coalcap-map -->
+<!-- Ren-map -->
+<div id="ren_map" class="tab-pane fade" role="tabpanel" aria-labelledby="ren_map-tab">
+<p><img src="plots/map_ren.png"  alt="..."></p>
+</div>
+<!-- /Ren-map -->
+<!-- Hydrocap-map -->
+<div id="hydrocap_map" class="tab-pane fade" role="tabpanel" aria-labelledby="hydrocap_map-tab">
+<p><img src="plots/map_hydrocap.png"  alt="..."></p>
+</div>
+<!-- /Hydrocap-map -->
+</div>
+<!-- /Content - Maps -->
+</div>
+<!-- /Column with Maps -->
+</div>
+<!-- /First and only row -->
+</div>
+<!-- /Companies and Power-capacities-Worldmap -->
+<p><br/></p>
+<!-- Techmix introduction -->
+<div class="container">
+<p>
+One can also look at the technology mix of the ECB collateral framework in comparison with the global bond market and the EU economy.
+</p>
+<p><img src="plots/techmix_power.png"  alt="..."></p>
+<p>
+As one can see there a bigger disparities between the ECB eligible assets and the EU Economy, as well as the global bond market. This questions the proclaimed “Market neutral investment” by the ECB.
+</p>
+</div>
+<!-- /Results & Interpretation -->
+<br/>
+<hr>
+<!-- Auto -->
+<!-- Intro about the sector -->
+<div class="container">
+<h1>
+<a id="auto">Automotive Production</a>
+</h1>
+<p>
+Here we (aka Fiona) add some fancy text, to show how intelligent we (aka Fiona) are and how much we know about this sector. Just like “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
+</p>
+</div>
+<!-- Alignment-message - same color as szenario? -->
+<div class="alert alert-danger" role="alert">
+<p>You are not aligned!!!</p>
+</div>
+<!-- /Alignment-messagw-->
+<p><br/></p>
+<!-- Five Year charts -->
+<div class="container">
+<!-- First row with charts -->
+<div class="row">
+<div class="col">
+<img src="plots/fiveyear_ice.png"  alt="...">
+</div>
+<div class="col">
+<img src="plots/fiveyear_hybrid.png"  alt="...">
+</div>
+</div>
+<!-- /First row with charts -->
+<!-- Second row with one chart -->
+<div class="row justify-content-sm-center">
+<div class="col-6">
+<img src="plots/fiveyear_electric.png"  alt="...">
+</div>
+</div>
+<!-- /Second row with charts -->
+<!-- Third row with legend -->
+<!-- TODO: Properly size + add explanation of line-colors -->
+<div class="row justify-content-md-center">
+<div class="col-md-auto">
+<img src="plots/legend.png"  alt="...">
+</div>
+</div>
+<!-- /Third row with legend -->
+</div>
+<!-- /Five Year charts -->
+<p><br/></p>
+<!-- Results & Interpretation -->
+<div class="container">
+<p>
+THE ECB’s collateral assets scheme is not aligned in this sector either. Especially in the production of hybrid vehicles it is lagging behind – even behind a current policy scenario, exposing companies in this sector to additional risks. The technology mix is nevertheless pretty similar across the three comparison groups. TODO: add some more interpretation´
+</p>
+<p>
+One can also look at the technology mix of the ECB collateral framework in comparison with the global bond market and the EU economy.
+</p>
+<p><img src="plots/techmix_auto.png"  alt="..."></p>
+<p>
+The technology mix seems generally to agree, but the ECB elligible assets have a slightly higher share in ICE and less investments in electric vehicles, than the EU economy.
+</p>
+</div>
+<!-- /Results & Interpretation -->
 
 <footer>
 <hr>

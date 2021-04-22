@@ -1,5 +1,5 @@
 # Site-file. Ignore only for now
-_site/*
+_site
 
 # Metadata-files for internal use
 metadata.yml
