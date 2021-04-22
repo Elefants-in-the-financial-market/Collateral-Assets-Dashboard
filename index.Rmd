@@ -72,7 +72,6 @@ themes bootswatch
 <br/>
 <hr>
 
-
 ```{r child = 'containers/container_cards.Rmd'}
 ```
 <!-- End Beginning-Section -->
@@ -86,14 +85,11 @@ themes bootswatch
 <br/>
 <hr>
 
-
-
 ```{r child = 'containers/container_oil_and_gas.Rmd'}
 ```
 
 <br/>
 <hr>
-
 
 ```{r child = 'containers/container_power.Rmd'}
 ```
